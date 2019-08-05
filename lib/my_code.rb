@@ -35,7 +35,10 @@ def reduce_to_total(source_array, starting_point=0)
 end
 
 def reduce_to_all_true(source_array)
- source_array.reduce(:&&)
+ source_array.reduce(0) {
+   |value, item|
+   value & item
+ }
  
  
   # i = 0
