@@ -39,8 +39,6 @@ def reduce_to_all_true(source_array)
    |value|
    if value = false
      return false
-     elsif value = true
-     return true
    end
   
  }
