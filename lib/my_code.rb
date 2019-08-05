@@ -37,9 +37,10 @@ end
 def reduce_to_all_true(source_array)
  source_array.reduce(0) {
    |value|
-    value
    if value = false
      return false
+     elsif value = true
+     return true
    end
   
  }
